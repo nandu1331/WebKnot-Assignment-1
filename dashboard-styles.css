@@ -140,6 +140,12 @@ body {
     border-radius: 10px;
     justify-content: start;
     gap: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tile:hover {
+    transform: scale(1.05);
 }
 
 .tile p {
@@ -167,6 +173,11 @@ body {
     gap: 5px;
     align-items: center;
     min-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.report-tile:hover {
+    transform: scale(1.05);
 }
 
 .ring-container {
@@ -246,5 +257,29 @@ body {
     background: rgba(14, 113, 206, 0.156);
 }
 
+.bargraph {
+    flex: 1;
+    padding: 20px;
+    min-width: fit-content;
+}
+
+.graph-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.graph-bars {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 200px;
+    gap: 10px;
+}
+
+.bar {
+    width: 30px;
+    background: rgba(14, 113, 206, 0.6);
+    border-radius: 5px;
+}
 
 
